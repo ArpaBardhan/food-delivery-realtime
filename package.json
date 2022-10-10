@@ -1,0 +1,48 @@
+{
+  "name": "online-food-delivery",
+  "version": "1.0.0",
+  "description": "This is our online food delivery app",
+  "main": "server.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "connect-mongo": "^4.3.0",
+    "cookie-parser": "^1.4.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "express-flash": "0.0.2",
+    "express-session": "^1.17.1",
+    "moment": "^2.29.1",
+    "mongoose": "^5.11.18",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "node-sass": "^5.0.0",
+    "notie": "^4.3.1",
+    "noty": "^3.2.0-beta-deprecated",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "socket.io": "^3.1.2",
+    "tailwindcss": "^2.0.3"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "laravel-mix": "^5.0.0",
+    "nodemon": "^2.0.7",
+    "resolve-url-loader": "^3.1.2",
+    "sass": "^1.32.8",
+    "sass-loader": "^10.1.1",
+    "vue-template-compiler": "^2.6.12"
+  },
+  "scripts": {
+    "start": "nodemon server.js",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "author": "Aditya",
+  "license": "ISC"
+}
